@@ -62,8 +62,7 @@ public class BingoCard
             TreeSet<Integer> values = this.card.get(BINGO_KEYS.charAt(i));
             for (Integer value : values)
             {
-                System.out.printf("%3d",value);
-                System.out.print(" ");
+                System.out.printf("%3d ",value);
             }
             System.out.println();
         }
