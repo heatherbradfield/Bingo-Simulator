@@ -1,0 +1,1045 @@
+L11 Outputs
+Heather Bradfield
+
+=== SetDictionary ===
+
+CREATING set1
+-->set1 has 5 items: 
+[-1, 0, 1, 2, 3]
+
+-->contains for -1 yields true
+-->contains for -2 yields false
+-->contains for 3 yields true
+-->contains for 4 yields false
+-->Added 1 again to the set1, should be the same
+-->set1 has 5 items: 
+[-1, 0, 1, 2, 3]
+
+-->Iterating over the set1 
+	-1
+	0
+	1
+	2
+	3
+-->Removing -1 20 3 from set1
+-->Should just have 0 1 and 2 now
+-->set1 has 3 items: 
+[0, 1, 2]
+
+CREATING set2
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+CREATING UNION OF set1 and set2
+-->The union of set1 and set2 has 7 items: [-1, 0, 1, 2, 3, 5, 8]
+
+-->set1 should be unchanged
+-->set1 has 3 items: 
+[0, 1, 2]
+
+-->set2 should be unchanged
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF set1 and set2
+Finished creating intersection.
+-->The intersection of set1 and set2 has 2 items: [1, 2]
+
+-->set1 should be unchanged
+-->set1 has 3 items: 
+[0, 1, 2]
+
+-->set2 should be unchanged
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF set2 and set1
+Finished creating intersection.
+-->The intersection of set2 and set1 has 2 items: [1, 2]
+
+-->set1 should be unchanged
+-->set1 has 3 items: 
+[0, 1, 2]
+
+-->set2 should be unchanged
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF set2 and set2
+Finished creating intersection.
+-->The intersection of set2 and set2 has 6 items: [-1, 1, 2, 3, 5, 8]
+
+-->set1 should be unchanged
+-->set1 has 3 items: 
+[0, 1, 2]
+
+-->set2 should be unchanged
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+CREATING INTERSECTION OF testUnion and set2
+Finished creating intersection.
+-->The intersection of testUnion and set2 has 6 items: [-1, 1, 2, 3, 5, 8]
+
+-->testUnion should be unchanged
+-->testUnion has 7 items: 
+[-1, 0, 1, 2, 3, 5, 8]
+
+-->set2 should be unchanged
+-->set2 has 6 items: 
+[-1, 1, 2, 3, 5, 8]
+
+
+=== Bingo ===
+
+---> Setting up bingo game.
+Enter number of players.
+4
+---> Creating bingo card for Player 1
+B    1   2   6   7   8 
+I   23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+---> Creating bingo card for Player 2
+B    1   7   9  10  15 
+I   16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+---> Creating bingo card for Player 3
+B    1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O   61  67  70  73  75 
+
+---> Creating bingo card for Player 4
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+---> Starting the game with 4 players:
+     *********************************
+
+--> Calling B 2
+Player 1's card:
+B    0   1   2   6   7   8 
+I   23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    1   7   9  10  15 
+I   16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O   61  67  70  73  75 
+
+Player 4's card:
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling G 50
+Player 1's card:
+B    0   1   2   6   7   8 
+I   23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    1   7   9  10  15 
+I   16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O   61  67  70  73  75 
+
+Player 4's card:
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling I 28
+Player 1's card:
+B    0   1   2   6   7   8 
+I   23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    1   7   9  10  15 
+I   16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O   61  67  70  73  75 
+
+Player 4's card:
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling O 73
+Player 1's card:
+B    0   1   2   6   7   8 
+I   23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    1   7   9  10  15 
+I   16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling I 25
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling B 9
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling B 13
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G   46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G   48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling G 54
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O   67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling O 68
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling G 48
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling N 39
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling B 11
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling G 57
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O   61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling O 65
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N   31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O    0  61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+--> Calling N 31
+Player 1's card:
+B    0   1   2   6   7   8 
+I    0  23  24  25  26  27 
+N    0  31  36  37  40  41 
+G    0  46  49  54  57  60 
+O    0  67  68  70  72  74 
+
+Player 2's card:
+B    0   1   7   9  10  15 
+I    0  16  17  24  25  26 
+N   35  37  43  44  45 
+G   46  51  52  55  59 
+O    0  61  65  71  72  75 
+
+Player 3's card:
+B    0   1   2   6   8  12 
+I   16  18  19  22  27 
+N   34  36  38  40  41 
+G   49  52  53  56  59 
+O    0  61  67  70  73  75 
+
+Player 4's card:
+B    0   4   5   8   9  10 
+I   17  21  22  23  27 
+N   32  33  35  36  41 
+G    0  48  49  52  54  60 
+O   61  64  71  74  75 
+
+!!! Player 1 says BINGO !!!
+15 chips were called.
+
+
+
+
+*************** Run 2 ****************
+
+
+
+---> Setting up bingo game.
+Enter number of players.
+4
+---> Creating bingo card for Player 1
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+---> Creating bingo card for Player 2
+B    1   5   7  12  15 
+I   18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O   63  64  69  73  75 
+
+---> Creating bingo card for Player 3
+B    4   6   7  10  12 
+I   17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O   65  66  67  69  74 
+
+---> Creating bingo card for Player 4
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O   62  65  70  73  74 
+
+---> Starting the game with 4 players:
+     *********************************
+
+--> Calling G 50
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I   18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O   63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I   17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O   65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O   62  65  70  73  74 
+
+--> Calling O 69
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I   18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I   17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O   62  65  70  73  74 
+
+--> Calling N 38
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I   18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I   17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O   62  65  70  73  74 
+
+--> Calling O 74
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I   18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I   17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling I 19
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O   62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling O 71
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I   17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling I 17
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I    0  17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling I 24
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N   31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N   33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N   33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I    0  17  18  21  23  28 
+N   31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling N 45
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling I 26
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling B 10
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    0   4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    0   1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling N 36
+Player 1's card:
+B    2   8   9  11  14 
+I   18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    0   4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    0   1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling I 27
+Player 1's card:
+B    2   8   9  11  14 
+I    0  18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    0   4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    0   1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling B 1
+Player 1's card:
+B    2   8   9  11  14 
+I    0  18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    0   1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    0   4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G   47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    0   1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G   47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+--> Calling G 48
+Player 1's card:
+B    2   8   9  11  14 
+I    0  18  23  25  27  28 
+N    0  31  37  41  43  45 
+G   46  53  56  58  60 
+O    0  62  65  66  67  71 
+
+Player 2's card:
+B    0   1   5   7  12  15 
+I    0  18  19  21  27  28 
+N    0  33  34  39  42  45 
+G   51  54  56  57  59 
+O    0  63  64  69  73  75 
+
+Player 3's card:
+B    0   4   6   7  10  12 
+I    0  17  19  21  23  26 
+N    0  33  34  35  41  45 
+G    0  47  48  51  57  58 
+O    0  65  66  67  69  74 
+
+Player 4's card:
+B    0   1   7  10  13  14 
+I    0  17  18  21  23  28 
+N    0  31  39  40  41  45 
+G    0  47  48  51  56  57 
+O    0  62  65  70  73  74 
+
+!!! Player 3 says BINGO !!!
+!!! Player 4 says BINGO !!!
+15 chips were called.
