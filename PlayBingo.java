@@ -9,7 +9,7 @@ public class PlayBingo
 {
 	public static void main(String[] args) 
 	{
-		System.out.println("---> Setting up bingo game.");
+		System.out.println("---> IT'S BINGO TIME!");
 		
 		Scanner scan = new Scanner(System.in);
 		int numOfPlayers;
